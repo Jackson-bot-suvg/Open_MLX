@@ -256,6 +256,26 @@ export const providers: Partial<Record<string, ProviderInfo>> = {
       ...completionParamsInputsConfigs,
     ],
   },
+  zhipu: {
+    title: "Zhipu AI",
+    provider: "zhipu",
+    description:
+      "Zhipu AI's GLM-4.7 is a powerful model with advanced reasoning capabilities.",
+    icon: "zhipu.png",
+    tags: [ModelProviderTags.RequiresApiKey],
+    packages: [models.glm47],
+    collectInputFor: [
+      {
+        inputType: "text",
+        key: "apiKey",
+        label: "API Key",
+        placeholder: "Enter your Zhipu AI API key",
+        required: true,
+      },
+    ],
+    refPage: "zhipu",
+    apiKeyUrl: "https://open.bigmodel.cn/",
+  },
   "function-network": {
     title: "Function Network",
     provider: "function-network",

@@ -65,6 +65,18 @@ export const models: { [key: string]: ModelPackage } = {
     providerOptions: ["nous"],
     isOpenSource: true,
   },
+  glm47: {
+    title: "Zhipu GLM-4.7",
+    description:
+      "The latest model from Zhipu AI with advanced reasoning and 'thinking' capabilities.",
+    params: {
+      model: "glm-4.7",
+      contextLength: 65536,
+    },
+    icon: "zhipu.png", // Assuming valid icon or fallback
+    providerOptions: ["zhipu"],
+    isOpenSource: false,
+  },
   hermes4_405b: {
     title: "Hermes 4 405B",
     description:

@@ -340,6 +340,14 @@ function autodetectTemplateType(model: string): TemplateType | undefined {
     return "zephyr";
   }
 
+  if (lower.includes("glm-4")) {
+    return "chatml";
+  }
+
+  if (lower.includes("glm-4")) {
+    return "chatml";
+  }
+
   // Claude requests always sent through Messages API, so formatting not necessary
   if (lower.includes("claude")) {
     return "none";

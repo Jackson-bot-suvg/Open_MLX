@@ -1,6 +1,4 @@
 {
-  "python.defaultInterpreterPath": "${workspaceFolder}/server/.venv/bin/python3",
-  "rust-analyzer.linkedProjects": ["./server/Cargo.toml"],
   "python.analysis.extraPaths": [],
   "python.autoComplete.extraPaths": [],
   "python.testing.pytestArgs": ["server"],
