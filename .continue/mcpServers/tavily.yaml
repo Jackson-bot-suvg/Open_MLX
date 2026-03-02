@@ -1,0 +1,11 @@
+name: Tavily Remote MCP
+version: 0.0.1
+schema: v1
+
+mcpServers:
+  - name: tavily
+    type: streamable-http
+    url: https://mcp.tavily.com/mcp/?tavilyApiKey=${{ secrets.TAVILY_API_KEY }}
+    requestOptions:
+      headers:
+        DEFAULT_PARAMETERS: '{"include_domains": ["ml-explore.github.io"],"search_depth":"advanced","max_results":10}'
